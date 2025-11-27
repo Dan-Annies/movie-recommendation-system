@@ -1,0 +1,6 @@
+flask
+pymongo[srv]
+pandas
+scikit-learn
+joblib
+pyspark
