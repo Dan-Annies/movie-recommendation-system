@@ -185,8 +185,7 @@ def batch_recommend():
         user_ids = request.json.get("user_ids", [])
         results = []
         
-        for user_id in user_ids[:10]:  # Limit to 10 users
-            # This is a simplified version - you'd want to optimize this
+        for user_id in user_ids[:10]: 
             results.append({
                 "user_id": user_id,
                 "recommendations": get_fallback_recommendations(user_id)

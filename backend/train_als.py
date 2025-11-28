@@ -85,7 +85,6 @@ def train_model():
         print("The model trained successfully but cannot be saved on Windows")
         print("System will use fallback recommendations")
 
-        # Save indexers (these work fine)
         print("Saving indexers...")
         joblib.dump(user_indexer_model.labels, USER_INDEXER_PATH)
         joblib.dump(item_indexer_model.labels, ITEM_INDEXER_PATH)
